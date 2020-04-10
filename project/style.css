@@ -99,10 +99,13 @@ body, button {
     padding: 6px 0;
 }
 
+.page__tabs {
+    margin: 32px 0 42px 0;
+}
+
 .tabs {
     display: flex;
     justify-content: center;
-    margin: 32px 0 42px 0;
 }
 
 .tabs__tab {
