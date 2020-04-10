@@ -17,6 +17,10 @@
     font-weight: 500;
 }
 
+body {
+    font-family: 'Rubik';
+}
+
 .page {
     margin: 32px 130px 28px 130px;
 }
@@ -35,24 +39,16 @@
     align-self: flex-end;
 }
 
-.logo-text {
-    display: inline;
-    font-family: 'Rubik';
+.logo__text {
     color: #333333;
     font-size: 20px;
     font-weight: 500;
     vertical-align: middle;
-    padding-right: 11px;
+    margin-left: 11px;
 }
 
-.logo-image {
-    display: inline;
+.logo__image {
     vertical-align: middle;
-    padding-right: 11px;
-}
-
-.search {
-    
 }
 
 .header__search {
@@ -66,7 +62,6 @@
 
 .input-field {
     display: inline-block;
-    font-family: 'Rubik';
     color: #828282;
     font-size: 16px;
     font-weight: normal;
@@ -80,7 +75,6 @@
     background-color: Transparent;
     border: none;
     cursor:pointer;
-    font-family: Rubik;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -100,16 +94,10 @@
     margin-right: 16px;
 }
 
-.logout {
-
-}
-
 .header__logout {
     align-self: flex-end;
     padding: 6px 0;
 }
-
-
 
 .hidden {
     display: none;
