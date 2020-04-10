@@ -21,7 +21,7 @@ a {
     font-weight: 500;
 }
 
-body {
+body, button {
     font-family: 'Rubik';
 }
 
@@ -97,6 +97,42 @@ body {
 .header__logout {
     align-self: flex-end;
     padding: 6px 0;
+}
+
+.page__tabs {
+    margin: 32px 0 42px 0;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.tabs__tab {
+    background-color: Transparent;
+    border: none;
+    cursor:pointer;
+    font-weight: 500;
+    font-size: 28px;
+    color: #333333;
+    margin: 0 12px;
+}
+
+.tabs__tab--active {
+    color: #E5261E;
+    border-bottom: 2px solid #E5261E;
+    padding: 9px 0;
+}
+
+.content-block {
+    margin-top: 32px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.content-block__scrollbar {
+    display: flex;
+    overflow-x: auto;   
 }
 
 .footer {
