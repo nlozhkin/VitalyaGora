@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 @font-face {
     font-family: 'Rubik';
     src: url('fonts/Rubik/Rubik-Regular.ttf')format('truetype');
@@ -22,17 +26,13 @@ body {
 }
 
 .page {
-    margin: 32px 130px 28px 130px;
+    margin: 32px 130px 0 130px;
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.logo {
-    text-decoration: none;    
 }
 
 .header__logo {
@@ -97,6 +97,29 @@ body {
 .header__logout {
     align-self: flex-end;
     padding: 6px 0;
+}
+
+.footer {
+    display: flex;
+    align-items: flex-end;
+    background-color: #F2F2F2;
+    padding: 22px 130px 25px 130px;
+}
+
+.footer__info {
+    margin-left: 40px;
+    font-style: normal;
+}
+
+.footer__row {
+    margin-bottom: 6px;
+    color: #333333;
+}
+
+.footer__row:last-child {
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #1F4766;
 }
 
 .hidden {
