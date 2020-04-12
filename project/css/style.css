@@ -138,6 +138,7 @@ body, button {
 }
 
 .content-block__card {
+    flex-shrink: 0;
     margin-right: 20px;
     width: 280px;
 }
@@ -189,9 +190,7 @@ body, button {
 }
 
 .genre-card {
-    display: block;
     position: relative;
-    overflow: hidden;
     height: 208px;
 }
 
