@@ -7,6 +7,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 @font-face {
     font-family: 'Rubik';
     src: url('../fonts/Rubik/Rubik-Regular.ttf')format('truetype');
@@ -225,6 +229,58 @@ body, button {
     bottom: 24px;
     width: 100%;
     text-align: center;
+}
+
+.channels-scrollbar {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: visible;
+    max-height: 696px;
+}
+
+.channel {
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    padding-top: 21px;
+    padding-bottom: 19px;
+    margin-bottom: 16px;
+}
+
+.channel__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 122px;
+}
+
+.channel__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 17px;
+    padding-left: 21px;
+}
+
+.channel__telecast {
+    font-weight: normal;
+    font-size: 16px;
+    color: #333333;
+    padding-bottom: 12px;
+    padding-left: 21px;
+}
+
+.channel__telecast:first-child {
+    color: #E5261E;
+}
+
+.channel__time {
+    padding-right: 16px;
+}
+
+.channel__telecast:last-child {
+    padding-bottom: 0;
 }
 
 .footer {
