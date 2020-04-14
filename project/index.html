@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/gradient-style.css">
+        <link rel="stylesheet" href="libs/flexboxgrid2.css">
     </head>
     <body>
         <div class="page">
@@ -29,7 +30,7 @@
                 <button class="tabs__tab tabs__tab--active" type="button">Фильмы</button>
                 <button class="tabs__tab" type="button">Телеканалы</button>
             </div>
-            <div class="films">
+            <div class="films hidden">
                 <div class="content-block">
                     🔥 Новинки
                     <div class="content-block__scrollbar">
@@ -108,6 +109,144 @@
                         </a>      
                     </div>  
                 </div>
+            </div>
+            <div class="channels-scrollbar">
+                <section class="channel row">
+                    <div class="channel__logo col-md-4 col-xs-12">
+                        <img class="channel__image" src="icons/channels/1.png">
+                    </div>
+                    <div class="channel__info col-md-8 col-xs-12">
+                        <h3 class="channel__title">Первый канал</h3>
+                        <ul>
+                            <li class="channel__telecast">
+                                <span class="channel__time">
+                                    13:00
+                                </span>
+                                <span>
+                                    Новости (с субтитрами)
+                                </span>
+                            </li>
+                            <li class="channel__telecast">
+                                <span class="channel__time">
+                                    14:00
+                                </span>
+                                <span>
+                                    Давай поженимся
+                                </span>
+                            </li>
+                            <li class="channel__telecast">
+                                <span class="channel__time">
+                                    15:00
+                                </span>
+                                <span>
+                                    Другие новости
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="channel row">
+                    <div class="channel__logo col-md-4 col-xs-12">
+                        <img class="channel__image" src="icons/channels/2.png">
+                    </div>
+                    <div class="channel__info col-md-8 col-xs-12">
+                        <h3 class="channel__title">2x2</h3>
+                        <ul>
+                            <li class="channel__telecast">
+                                <span class="channel__time">
+                                    13:00
+                                </span>
+                                <span>
+                                    МУЛЬТ ТВ. Сезон 4, 7 серия
+                                </span>
+                            </li>
+                            <li class="channel__telecast">
+                                <span class="channel__time">
+                                    14:00
+                                </span>
+                                <span>
+                                    ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия
+                                </span>
+                            </li>
+                            <li class="channel__telecast">
+                                <span class="channel__time">
+                                    15:00
+                                </span>
+                                <span>
+                                    БУРДАШЕВ. Сезон 1, 20 серия
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="channel row">
+                    <div class="channel__logo col-md-4 col-xs-12">
+                        <img class="channel__image" src="icons/channels/3.png">
+                    </div>
+                    <div class="channel__info col-md-8 col-xs-12">
+                        <h3 class="channel__title">РБК</h3>
+                        <ul>
+                            <li class="channel__telecast">
+                                <span class="channel__time">
+                                    13:00
+                                </span>
+                                <span>
+                                    ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС
+                                </span>
+                            </li>
+                            <li class="channel__telecast">
+                                <span class="channel__time">
+                                    14:00
+                                </span>
+                                <span>
+                                    ДЕНЬ. Главные темы
+                                </span>
+                            </li>
+                            <li class="channel__telecast">
+                                <span class="channel__time">
+                                    15:00
+                                </span>
+                                <span>
+                                    Главные новости
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="channel row">
+                    <div class="channel__logo col-md-4 col-xs-12">
+                        <img class="channel__image" src="icons/channels/4.png">
+                    </div>
+                    <div class="channel__info col-md-8 col-xs-12">
+                        <h3 class="channel__title">AMEDIA PREMIUM</h3>
+                        <ul>
+                            <li class="channel__telecast">
+                                <span class="channel__time">
+                                    13:00
+                                </span>
+                                <span>
+                                    Клиент всегда мёртв
+                                </span>
+                            </li>
+                            <li class="channel__telecast">
+                                <span class="channel__time">
+                                    14:00
+                                </span>
+                                <span>
+                                    Голодные игры: Сойка-пересмешница. Часть I
+                                </span>
+                            </li>
+                            <li class="channel__telecast">
+                                <span class="channel__time">
+                                    15:00
+                                </span>
+                                <span>
+                                    Секс в большом городе
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </div>
         </div>
         <footer class="footer">
