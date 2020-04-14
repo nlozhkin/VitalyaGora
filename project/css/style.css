@@ -33,14 +33,34 @@ body, button {
     margin: 32px 130px 0 130px;
 }
 
+@media (max-width: 1199px){
+    .page {
+        margin: 32px 100px 0 100px;
+    }
+}
+
+@media (max-width: 575px){
+    .page {
+        margin: 16px 20px 0 20px;
+    }
+}
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+@media (max-width: 767px){
+    .header {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
 .header__logo {
     align-self: flex-end;
+    margin-right: 11px;
 }
 
 .logo__text {
@@ -48,7 +68,12 @@ body, button {
     font-size: 20px;
     font-weight: 500;
     vertical-align: middle;
-    margin-left: 11px;
+}
+
+@media (max-width: 991px){
+    .logo__text {
+        display: none;
+    }
 }
 
 .logo__image {
@@ -56,12 +81,44 @@ body, button {
 }
 
 .header__search {
+    display: flex;
     align-self: flex-end;
+    margin: 0 11px;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 767px){
+    .header__search {
+        order: 1;
+        margin: 24px 40px 0 40px;
+    }
 }
 
 .search__input-field {
     width: 320px;
     vertical-align: middle;
+    margin-right: 32px;
+}
+
+@media (max-width: 1199px) {
+    .search__input-field {
+        width: 300px;
+        margin-right: 18px;
+    }
+}
+
+@media (max-width: 991px) {
+    .search__input-field {
+        width: 220px;
+        margin-right: 14px;
+    }
+}
+
+@media (max-width: 575px) {
+    .search__input-field {
+        width: 160px;
+        margin-right: 10px;
+    }
 }
 
 .input-field {
@@ -90,17 +147,23 @@ body, button {
 }
 
 .search__button {
-    margin-left: 32px;
     vertical-align: middle;
+}
+
+.header__logout {
+    align-self: flex-end;
+    padding: 6px 0;
+    margin-left: 11px;
 }
 
 .logout__name {
     margin-right: 16px;
 }
 
-.header__logout {
-    align-self: flex-end;
-    padding: 6px 0;
+@media (max-width: 991px){
+    .logout__name {
+        margin-right: 8px;
+    }
 }
 
 .page__tabs {
@@ -120,12 +183,19 @@ body, button {
     font-size: 28px;
     color: #333333;
     margin: 0 12px;
+    padding: 9px 0;
 }
 
 .tabs__tab--active {
     color: #E5261E;
-    border-bottom: 2px solid #E5261E;
-    padding: 9px 0;
+    border-bottom: 2px solid #E5261E;   
+}
+
+@media (max-width: 575px) {
+    .tabs__tab {
+        font-size: 24px;
+        padding: 4px 0;
+    }
 }
 
 .content-block {
@@ -284,16 +354,46 @@ body, button {
 
 .footer {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     background-color: #F2F2F2;
     padding: 22px 130px 25px 130px;
     margin-top: 72px;
+    line-height: 19px;
+    font-size: 16px;
 }
+
+@media (max-width: 1199px){
+    .footer {
+        padding: 20px 100px 21px 100px;
+        line-height: 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575px){
+    .footer {
+        padding: 10px 20px 11px 14px;
+        line-height: 11px;
+        font-size: 10px;
+    }
+}
+
 
 .footer__info {
     margin-left: 40px;
     font-style: normal;
-    line-height: 19px;
+}
+
+@media (max-width: 575px){
+    .footer__info {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer__htc-logo {
+        display: none;
+    }
 }
 
 .footer__row {
