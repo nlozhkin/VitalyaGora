@@ -234,9 +234,8 @@ body, button {
 .channels-scrollbar {
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
-    overflow-x: visible;
-    max-height: 696px;
+    overflow: visible auto;
+    max-height: 700px;
 }
 
 .channel {
