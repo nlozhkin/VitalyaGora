@@ -245,7 +245,6 @@ body, button {
 }
 
 .film-card__description{
-    display: none;
     position: absolute;
     background-color: rgba(51, 51, 51, 0.8);
     width: 100%;
@@ -257,10 +256,13 @@ body, button {
     font-size: 16px;
     padding: 16px;
     line-height: 140%;
+    overflow: hidden;
+    transition: transform 0.2s;
+    transform: translateY(-100%);
 }
 
 .film-card__media:hover .film-card__description {
-    display: block;
+    transform: translateY(0);
 }
 
 .film-card__title {
@@ -282,7 +284,7 @@ body, button {
     opacity: 0.8;
     box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
     border-radius: 6px;
-    transition: opacity 3s;
+    transition: opacity 0.3s;
 }
 
 .genre-card:hover .genre-card__background {
