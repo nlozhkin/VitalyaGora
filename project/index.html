@@ -21,9 +21,10 @@
                     </button>
                 </form>
                 <div class="logout header__logout">
-                    <button class="button button--black logout__name" type="button">
+                    <button id="logout-name" class="button button--black logout__name" type="button">
                         Константин К.
                     </button>
+                    <input id="logout-input" class="input-field logout__input hidden" type="text" placeholder="">
                     <button class="button" type="submit">Выйти</button>
                 </div>
             </header>
@@ -31,7 +32,7 @@
                 <button class="tabs__tab tabs__tab--active" type="button">Фильмы</button>
                 <button class="tabs__tab" type="button">Телеканалы</button>
             </div>
-            <div class="films">
+            <div class="page__content films">
                 <div class="content-block">
                     🔥 Новинки
                     <div class="content-block__scrollbar">
@@ -111,7 +112,7 @@
                     </div>  
                 </div>
             </div>
-            <div class="channels-scrollbar hidden">
+            <div class="page__content channels-scrollbar hidden">
                 <section class="channel row">
                     <div class="channel__logo col-md-4 col-xs-12">
                         <img class="channel__image" src="icons/channels/1.png">
@@ -257,6 +258,8 @@
                 <p class="footer__row">+7 (3412) 93-88-61, 43-29-29</p>
                 <p class="footer__row"><a href="https://htc-cs.ru/" target="_blank">htc-cs.ru</a>
             </address>
-        </footer>       
+        </footer>
+        <script src="js/tab.js"></script>
+        <script src="js/header-name.js"></script>
     </body>
 </html>

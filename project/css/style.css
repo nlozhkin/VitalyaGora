@@ -17,6 +17,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 input {
     outline-color: rgba(50, 115, 220, 0.3);
+    width: 120px;
 }
 
 @font-face {
@@ -33,7 +34,7 @@ input {
     font-weight: 500;
 }
 
-body, button {
+body, button, input {
     font-family: 'Rubik';
 }
 
@@ -162,14 +163,34 @@ body, button {
     align-self: flex-end;
     padding: 6px 0;
     margin-left: 11px;
+    width: 284px;
 }
 
 .logout__name {
+    display: inline-block;
     margin-right: 16px;
+    max-width: 114px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.logout__input {
+    display: inline-block;
+    margin-right: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0;
+    color: #333333;
+    max-width: 114px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 @media (max-width: 991px){
-    .logout__name {
+    .logout__name, .logout__input {
         margin-right: 8px;
     }
 }
@@ -190,6 +211,7 @@ body, button {
     font-weight: 500;
     font-size: 28px;
     color: #333333;
+    outline-style: none;
     margin: 0 12px;
     padding: 9px 0;
 }
